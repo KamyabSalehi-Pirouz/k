@@ -1,32 +1,36 @@
-print("Question 1")
+# Question 1
 
-num1 = input("Enter the number of kilometers: ")
+# Get user inputs
+km = input("Enter the number of kilometers: ")
 
-num2 = round((float(num1) * float(0.621)))
+# Calculate the miles equivalent
+mi = round(float(km) * 0.621)
 
-print(str(num2) + " is the number of miles.")
+# Print results
+print('The number of miles is: ', mi)
 
-print("Question 2")
+# Question 2
 
-seconds1 = input("Please enter a number of seconds: ")
+# Get user inputs
+seconds1 = float(input("Please enter a number of seconds: "))
 
-hours = round(float(seconds1) / float(3600))
+# Calculations
+hours = round(seconds1 / 3600)
 
-minutes = round(float(seconds1) % float(3600) / float(60))
+minutes = round(seconds1 // 3600 / 60)
 
-seconds = round(float(seconds1)) % 60 
+seconds = round(seconds1) % 60 
 
-print("The total amount of time is " + str(hours) + " hours, " + str(minutes) + " minutes and " + str(seconds) + " seconds.")
+print("The total amount of time is ", hours, " hours, " , minutes, " minutes and ", seconds, " seconds.")
 
-      
 
 print("Question 3")
 
-km = input("Enter the distance you ran in kilometers: ")
+km = float(input("Enter the distance you ran in kilometers: "))
 
-minutes = input("Enter the amount of minutes you ran: ")
+minutes = float(input("Enter the amount of minutes you ran: "))
 
-seconds1 = input("Enter the amount of seconds you ran: ")
+seconds1 = float(input("Enter the amount of seconds you ran: "))
 
 total_seconds = minutes * 60 + seconds1
 
@@ -38,21 +42,21 @@ pace_min2 = (float(minutes) / float(miles))
 
 pace_sec = round(abs((pace_min2 - pace_min) * 60))
 
-print("You ran about " + str(miles) + " miles at a pace of " + str(pace_min) + " minutes and " + str(pace_sec) + " seconds per mile.")
+print("You ran about ", miles, " miles at a pace of ", (pace_min), " minutes and " , pace_sec, " seconds per mile.")
 
 
 
 print("Question 4")
 
-US = input("Please enter a number of $US ")
+US = float(input("Please enter a number of $US "))
 
-fee = input("Please enter a conversion fee: ")
+fee = float(input("Please enter a conversion fee: "))
 
-conversion = input("Please enter the value of US dollars for every 1 Galleon: ")
+conversion = float(input("Please enter the value of US dollars for every 1 Galleon: "))
 
-Galleons = round((float(US) - float(fee)) / float(conversion))
+Galleons = round((US - fee) / conversion)
 
-print("You will receive" ,(Galleons), "full units of Galleons.")
+print("You will receive", (Galleons), "full units of Galleons.")
 
 
     
