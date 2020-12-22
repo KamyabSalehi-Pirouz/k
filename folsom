@@ -1,0 +1,64 @@
+print("Question 1")
+
+num1 = input("Enter the number of kilometers: ")
+
+num2 = round((float(num1) * float(0.621)))
+
+print(str(num2) + " is the number of miles.")
+
+print("Question 2")
+
+seconds1 = input("Please enter a number of seconds: ")
+
+hours = round(float(seconds1) / float(3600))
+
+minutes = round(float(seconds1) % float(3600) / float(60))
+
+seconds = round(float(seconds1)) % 60 
+
+print("The total amount of time is " + str(hours) + " hours, " + str(minutes) + " minutes and " + str(seconds) + " seconds.")
+
+      
+
+print("Question 3")
+
+km = input("Enter the distance you ran in kilometers: ")
+
+minutes = input("Enter the amount of minutes you ran: ")
+
+seconds1 = input("Enter the amount of seconds you ran: ")
+
+total_seconds = minutes * 60 + seconds1
+
+miles = round(float(km) * float(0.621))
+
+pace_min = round(float(minutes) / float(miles))
+
+pace_min2 = (float(minutes) / float(miles))
+
+pace_sec = round(abs((pace_min2 - pace_min) * 60))
+
+print("You ran about " + str(miles) + " miles at a pace of " + str(pace_min) + " minutes and " + str(pace_sec) + " seconds per mile.")
+
+
+
+print("Question 4")
+
+US = input("Please enter a number of $US ")
+
+fee = input("Please enter a conversion fee: ")
+
+conversion = input("Please enter the value of US dollars for every 1 Galleon: ")
+
+Galleons = round((float(US) - float(fee)) / float(conversion))
+
+print("You will receive" ,(Galleons), "full units of Galleons.")
+
+
+    
+
+
+
+
+
+
